@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/rubensset.github.io/yellowfever/static/css/main.e6c13ad2.css",
-    "main.js": "/rubensset.github.io/yellowfever/static/js/main.a0189b9f.js",
-    "static/js/845.ee66a780.chunk.js": "/rubensset.github.io/yellowfever/static/js/845.ee66a780.chunk.js",
-    "static/js/787.28cb0dcd.chunk.js": "/rubensset.github.io/yellowfever/static/js/787.28cb0dcd.chunk.js",
-    "static/media/confirm.wav": "/rubensset.github.io/yellowfever/static/media/confirm.6cc7661e59a1b7786f85.wav",
-    "static/media/YELLOW_FEVER.png": "/rubensset.github.io/yellowfever/static/media/YELLOW_FEVER.6552aa66f1eb26e829cc.png",
-    "static/media/notify.mp3": "/rubensset.github.io/yellowfever/static/media/notify.e2e956cec8e665fdac87.mp3",
-    "static/media/corrupted.webp": "/rubensset.github.io/yellowfever/static/media/corrupted.dda28049e8f9fc9421eb.webp",
-    "index.html": "/rubensset.github.io/yellowfever/index.html",
-    "main.e6c13ad2.css.map": "/rubensset.github.io/yellowfever/static/css/main.e6c13ad2.css.map",
-    "main.a0189b9f.js.map": "/rubensset.github.io/yellowfever/static/js/main.a0189b9f.js.map",
-    "845.ee66a780.chunk.js.map": "/rubensset.github.io/yellowfever/static/js/845.ee66a780.chunk.js.map",
-    "787.28cb0dcd.chunk.js.map": "/rubensset.github.io/yellowfever/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/rubensset.github.io/static/css/main.e6c13ad2.css",
+    "main.js": "/rubensset.github.io/static/js/main.c522fc59.js",
+    "static/js/845.ee66a780.chunk.js": "/rubensset.github.io/static/js/845.ee66a780.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/rubensset.github.io/static/js/787.28cb0dcd.chunk.js",
+    "static/media/confirm.wav": "/rubensset.github.io/static/media/confirm.6cc7661e59a1b7786f85.wav",
+    "static/media/YELLOW_FEVER.png": "/rubensset.github.io/static/media/YELLOW_FEVER.6552aa66f1eb26e829cc.png",
+    "static/media/notify.mp3": "/rubensset.github.io/static/media/notify.e2e956cec8e665fdac87.mp3",
+    "static/media/corrupted.webp": "/rubensset.github.io/static/media/corrupted.dda28049e8f9fc9421eb.webp",
+    "index.html": "/rubensset.github.io/index.html",
+    "main.e6c13ad2.css.map": "/rubensset.github.io/static/css/main.e6c13ad2.css.map",
+    "main.c522fc59.js.map": "/rubensset.github.io/static/js/main.c522fc59.js.map",
+    "845.ee66a780.chunk.js.map": "/rubensset.github.io/static/js/845.ee66a780.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/rubensset.github.io/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a0189b9f.js"
+    "static/js/main.c522fc59.js"
   ]
 }
