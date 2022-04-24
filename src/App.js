@@ -87,23 +87,23 @@ export default function App() {
   }, [timer, play, respawn]);
 
   const alertInvasion = useCallback((time) => {
-    if(timer === 1640) tempo1();
-    if(timer === 1420) tempo2();
-    if(timer === 1180) tempo3();
-    if(timer === 960) tempo4();
-    if(timer === 740) tempo5();
-    if(timer === 530) tempo6();
-    if(timer === 280) tempo7();
+    if(time === 1640) tempo1();
+    if(time === 1420) tempo2();
+    if(time === 1180) tempo3();
+    if(time === 960) tempo4();
+    if(time === 740) tempo5();
+    if(time === 530) tempo6();
+    if(time === 280) tempo7();
 
-    if(timer === 565) caveira1();
-    if(timer === 440) caveira2();
-    if(timer === 370) caveira3();
-    if(timer === 225) caveira4();
-    if(timer === 180) caveira5();
-    if(timer === 100) caveira6();
+    if(time === 565) caveira1();
+    if(time === 440) caveira2();
+    if(time === 370) caveira3();
+    if(time === 225) caveira4();
+    if(time === 180) caveira5();
+    if(time === 100) caveira6();
 
 
-  }, [timer, tempo1, tempo2, tempo3, tempo4, tempo5, tempo6, tempo7, caveira1, caveira2, caveira3, caveira4, caveira5, caveira6 ]);
+  }, [tempo1, tempo2, tempo3, tempo4, tempo5, tempo6, tempo7, caveira1, caveira2, caveira3, caveira4, caveira5, caveira6 ]);
   
   useEffect(() => {
     if(start){
