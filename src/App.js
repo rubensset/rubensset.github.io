@@ -7,6 +7,21 @@ import logo from './assets/YELLOW_FEVER.png';
 import war from './assets/new-world.png';
 import invasion from './assets/corrupted.webp';
 
+import t1 from './assets/tempo1.mp3';
+import t2 from './assets/tempo2.mp3';
+import t3 from './assets/tempo3.mp3';
+import t4 from './assets/tempo4.mp3';
+import t5 from './assets/tempo5.mp3';
+import t6 from './assets/tempo6.mp3';
+import t7 from './assets/tempo7.mp3';
+
+import c1 from './assets/caveira1.mp3';
+import c2 from './assets/caveira2.mp3';
+import c3 from './assets/caveira3.mp3';
+import c4 from './assets/caveira4.mp3';
+import c5 from './assets/caveira5.mp3';
+import c6 from './assets/caveira6.mp3';
+
 import { Button, ButtonContainer, ButtonStart, ButtonText, Container, ContainerSave, Icon, Logo, SavedTime, Timer, Title } from './styles';
 
 const INITIAL_TIMER = 2100
@@ -20,6 +35,35 @@ export default function App() {
   const [play] = useSound(notify,
     { volume: 0.5 });
   const [respawn] = useSound(confirm,
+    { volume: 0.25 });
+  
+  const [tempo1] = useSound(t1,
+    { volume: 0.25 });
+  const [tempo2] = useSound(t2,
+    { volume: 0.25 });
+  const [tempo3] = useSound(t3,
+    { volume: 0.25 });
+  const [tempo4] = useSound(t4,
+    { volume: 0.25 });
+  const [tempo5] = useSound(t5,
+    { volume: 0.25 });
+  const [tempo6] = useSound(t6,
+    { volume: 0.25 });
+  const [tempo7] = useSound(t7,
+    { volume: 0.25 });
+
+
+  const [caveira1] = useSound(c1,
+    { volume: 0.25 });
+  const [caveira2] = useSound(c2,
+    { volume: 0.25 });
+  const [caveira3] = useSound(c3,
+    { volume: 0.25 });
+  const [caveira4] = useSound(c4,
+    { volume: 0.25 });
+  const [caveira5] = useSound(c5,
+    { volume: 0.25 });
+  const [caveira6] = useSound(c6,
     { volume: 0.25 });
 
   var minutes = parseInt(timer / 60, 10);
@@ -42,7 +86,24 @@ export default function App() {
     if(timer === time) respawn();
   }, [timer, play, respawn]);
 
-  // console.log(wave)
+  const alertInvasion = useCallback((time) => {
+    if(timer === 1590) tempo1();
+    if(timer === 1380) tempo2();
+    if(timer === 1140) tempo3();
+    if(timer === 960) tempo4();
+    if(timer === 800) tempo5();
+    if(timer === 530) tempo6();
+    if(timer === 240) tempo7();
+
+    if(timer === 565) caveira1();
+    if(timer === 440) caveira2();
+    if(timer === 370) caveira3();
+    if(timer === 225) caveira4();
+    if(timer === 180) caveira5();
+    if(timer === 100) caveira6();
+
+
+  }, [timer, tempo1, tempo2, tempo3, tempo4, tempo5, tempo6, tempo7, caveira1, caveira2, caveira3, caveira4, caveira5, caveira6 ]);
   
   useEffect(() => {
     if(start){
@@ -112,10 +173,10 @@ export default function App() {
     }
 
     if(type === 'INVASÃO'){
-      //Valores de invasao
+      alertInvasion(timer)
     }
     
-  }, [timer, alertTime, type]);
+  }, [timer, alertTime, type, alertInvasion]);
 
   const buttonText = start ? 'RESET' : 'INICIAR'
 
@@ -164,9 +225,9 @@ export default function App() {
       
 
       <ContainerSave>
-        {savedTime.map((item) => { 
+        {savedTime.map((item,index) => { 
           return(
-            <SavedTime>{item}</SavedTime>
+            <SavedTime key={index}>{item}</SavedTime>
           )
         })}
       </ContainerSave>
