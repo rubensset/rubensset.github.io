@@ -87,13 +87,13 @@ export default function App() {
   }, [timer, play, respawn]);
 
   const alertInvasion = useCallback((time) => {
-    if(timer === 1590) tempo1();
-    if(timer === 1380) tempo2();
-    if(timer === 1140) tempo3();
+    if(timer === 1640) tempo1();
+    if(timer === 1420) tempo2();
+    if(timer === 1180) tempo3();
     if(timer === 960) tempo4();
-    if(timer === 800) tempo5();
+    if(timer === 740) tempo5();
     if(timer === 530) tempo6();
-    if(timer === 240) tempo7();
+    if(timer === 280) tempo7();
 
     if(timer === 565) caveira1();
     if(timer === 440) caveira2();
